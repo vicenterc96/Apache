@@ -27,17 +27,20 @@ Comprobamos el estado de apache
 systemctl status apache2
 ~~~
 ![Estado Apache](./imagenes/estado.png "Estado Apache")
+
 Para ver la versión de apache que tenemos instalada
 ~~~
 sudo apachectl -v
 ~~~
 ![Versión](./imagenes/version.png "Versión")
+
 Ahora activamos el cortafuegos, primero veremos la lista de los cortafuegos.
 
 ~~~
 sudo ufw app list
 ~~~
 Entonces nos saldrán la lista de perfiles de las aplicaciónes.
+
 ![Apps disponibles](./imagenes/appsdisponibles.png "Apps disponibles")
 
 Seleccionamos uno de ellos.
@@ -61,12 +64,15 @@ Verificamos el sistema base.
 sudo systemctl status apache2
 ~~~
 y nos aparecera lo siguiente.
+
 ![Estado servidor](./imagenes/EstadoServidor.png "Estado servidor")
+
 Cuando tengamos la direccion ip del servidor, introducimos la siguiente direccion en el navegador.
 ~~~
 127.0.1.1 (En mi caso)
 ~~~
 Y nos debera salir esto
+
 ![Apache](./imagenes/apache.png "Apache")
 
 ### Administracion del proceso de apache
@@ -148,6 +154,8 @@ y recargamos la configuracion de apache
 ~~~
 sudo systemctl reload apache2
 ~~~
+
 ![Funciona](./imagenes/funciona.png "Funciona")
+
 ## Conclusión
 En este proyecto hemos realizado la instalación de apache y posteriormente su configuracion. En la cual primero hemos cargado la página principal de apache para comprobar que el servidor funcionase correctamente y después hemos cargado una web en el puesto de la de apache. 
